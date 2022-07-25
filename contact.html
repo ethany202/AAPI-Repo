@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AAPI Connector</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div onclick="redirectToIndex()" class="big-name">Asian American Pacific Islander Connector</div>
+
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <ul class="primary-nav">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Resources</button>
+              <div class="dropdown-content">
+                <a href="resources.html">All Resources</a>
+                <a href="commonResources.html">Most Common Categories</a>
+                <a href="otherResources.html">Other Resources</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="mainsection">
+    <div class="two-col">
+
+      <div class="contact-left">
+        <div class="abtustitle">
+          <p>Contact Us</p>
+        </div>
+        <form action="https://formsubmit.co/braydenwang3@gmail.com" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required="">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required="">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="7" required=""></textarea>
+          <input type="submit" class="send-message-cta" value="Send Message">
+        </form>
+      </div>
+      <div class="contact-right">
+        <img src="https://unsplash.it/600/400">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+
+
+  <!--   chicken -->
+  <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>-->
+</body>
+
+</html>

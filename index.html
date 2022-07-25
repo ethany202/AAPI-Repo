@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AAPI Connector</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="title" class="big-name" onclick="redirectToIndex()">Asian American Pacific Islander Connector</div>
+
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <ul class="primary-nav">
+          <li><a href="#"><b>Home</b></a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Resources</button>
+              <div class="dropdown-content">
+                <a href="resources.html">All Resources</a>
+                <a href="commonResources.html">Most Common Categories</a>
+                <a href="otherResources.html">Other Resources</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="mainsection">
+    <div class="container">
+      <div class="abtustitle">What is AAPI Connector?</div>
+      <p class="description">Our goal is to provide individuals with information and resources to strengthen the AAPI community and provide an easy way to learn about and report hate crimes.</p>
+  <ul class="slider">
+    <li>
+      <input type="radio" id="slide1" name="slide" checked>
+      <label for="slide1"></label>
+      <img src="https://images.unsplash.com/photo-1616170969612-4349f23db96f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="image 1" alt="Panel 1">
+    </li>
+    <li>
+      <input type="radio" id="slide2" name="slide">
+      <label for="slide2"></label>
+      <img src="https://images.unsplash.com/photo-1616170969676-6ab61acbdb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="Panel 2">
+    </li>
+    <li>
+      <input type="radio" id="slide3" name="slide">
+      <label for="slide3"></label>
+      <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/943660/hq_sm.jpg" alt="Panel 3">
+    </li>
+</ul>
+      <!--<div class = "images">
+        <img src="https://images.unsplash.com/photo-1616170969612-4349f23db96f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="image 1">
+        <img src="https://images.unsplash.com/photo-1616170969676-6ab61acbdb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="image 2">
+      </div>-->
+      <p class="description">We find reputable resources for each of the three categories: aid, activism, and awareness for Asian American and Pacific Islander hate, especially as a result of COVID.<br><br>You can:</p> 
+      <ul class = "action-items">
+        <li><a href = "resources.html">Learn</a></li>
+        <li><a href = "contact.html">Get Connected</a></li>
+        <li><a href = "donate.html">Contribute</a></li>
+      </ul>
+      <p class = "subhead">What are you looking for?</p>
+      <p class = "description">Take this preference form below to narrow your searches:</p>
+      <ul>
+      <form action="customResources.html" id="searchForm" method="get">
+        <input type="checkbox" id="formOption1" name="donate">
+        <label for="formOption1">Donations</label><br>
+        <input type="checkbox" id="formOption2" name="petition">
+        <label for="formOption2">Petitions</label><br>
+        <input type="checkbox" id="formOption3" name="rally">
+        <label for="formOption3">Rallies</label><br>
+        <input type="checkbox" id="formOption4" name="letter">
+        <label for="formOption4">Lettering/Formats</label><br>
+        <input type="checkbox" id="formOption5" name="activism">
+        <label for="formOption5">Activism/Education</label><br>
+        <input type="checkbox" id="formOption6" name="hotline">
+        <label for="formOption6">Hotlines</label><br>
+        <input type="checkbox" id="formOption7" name="report">
+        <label for="formOption7">Report a case</label><br>
+        <input type="checkbox" id="formOption8" name="stats">
+        <label for="formOption8">Statistics</label><br>
+        <input type="checkbox" id="formOption9" name="response">
+        <label for="formOption9">How to respond to racism/hate crimes</label><br>
+        <input type="checkbox" id="formOption10" name="hate">
+        <label for="formOption10">What is a hate crime</label><br>
+        <input type="checkbox" id="formOption11" name="health">
+        <label for="formOption11">Mental health</label><br>
+        <input type="checkbox" id="formOption12" name="history">
+        <label for="formOption12">History</label><br><br>
+        <input type="submit" class="submitButton" value="Submit">
+      </form>
+        </ul>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+
+
+  <!--   chicken -->
+  <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>-->
+</body>
+
+</html>
