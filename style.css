@@ -522,6 +522,9 @@ input[type=submit]:hover {
   .navbar li {
     font-size: 0.8em;
   }
+  .contact-right {
+    display: none;
+  }
 }
 .part1 {
   position: relative;
