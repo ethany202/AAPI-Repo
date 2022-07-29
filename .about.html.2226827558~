@@ -66,7 +66,7 @@
       <li class="abt-link3"><a href="https://www.velbranchout.org/hcas-tutoring"><img src="img/tutoring.svg">
           Tutoring</a></li>
       <li class="abt-link4">
-        <span class="keeptogether"><a href="https://www.velbranchout.org/career-panel"><img src="img/careerpanels.svg"> Career Panel</span></a></li>
+        <a href="https://www.velbranchout.org/career-panel"><img src="img/careerpanels.svg"> <span class="keeptogether">Career Panel</span></a></li>
     </ul>
     <div class="bigimage">
       <a href="https://www.velbranchout.org/">
@@ -86,7 +86,15 @@
           the community. BranchOut! also became an official organization in 2018 to certify the U.S. President's
           Volunteer
           Service Award. Our innovator program won the US Congressional App Challenge award in 2020.</p>
-        
+        <p class="subhead">Other resources we offer</p>
+        <div id="subhead-links">
+          <ul>
+            <!-- Make the vCare and SOLve links go to the apps when they're ready -->
+            <li><a href="https://www.velbranchout.org/">vCare</a></li>
+            <li><a href="https://www.velbranchout.org/">SOLve</a></li>
+            <li><a href="https://www.velbranchout.org/">velbranchout.org</a></li>
+          </ul>
+        </div>
         
       </div>
       <div class="right-col">
@@ -96,15 +104,7 @@
         </div>
       </div>
     </div>
-      <p class="subhead">Other resources we offer</p>
-        <div id="subhead-links">
-          <ul>
-            <!-- Make the vCare and SOLve links go to the apps when they're ready -->
-            <li><a href="https://www.velbranchout.org/">vCare</a></li>
-            <li><a href="https://www.velbranchout.org/">SOLve</a></li>
-            <li><a href="https://www.velbranchout.org/">velbranchout.org</a></li>
-          </ul>
-        </div>
+
   </div>
 
 </body>

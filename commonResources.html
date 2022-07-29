@@ -11,15 +11,19 @@
 
 <body>
   <div onclick="redirectToIndex()" class="big-name">Asian American Pacific Islander Connector</div>
-
+  
   <div class="navbar">
     <div class="container">
       <nav>
         <ul class="primary-nav">
-          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current">
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('index.html')" class="dropbtn">Home</button>
+            </div>
+          </li>
           <li>
             <div class="dropdown">
-              <button class="dropbtn"><b>Resources</b></button>
+              <button class="dropbtn">Resources</button>
               <div class="dropdown-content">
                 <a href="resources.html">All Resources</a>
                 <a href="commonResources.html">Most Common Categories</a>
@@ -27,18 +31,70 @@
               </div>
             </div>
           </li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('donate.html')" class="dropbtn">Donate</button>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('about.html')" class="dropbtn">About Us</button>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('contact.html')" class="dropbtn">Contact Us</button>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
   </div>
-  <div class="mainsection">
+  <div class = "mainsection">
     <div class="abtustitle">
-      Most Common Categories
+     Most Common Resources
     </div>
+    <br>
+    <div id="hate" style="margin-left: 10px"></div>
+    <div id="response" style="margin-left: 10px"></div>
+    <div id="hotline" style="margin-left: 10px"></div>
+    <div id="report" style="margin-left: 10px"></div>
+    <div id="letter" style="margin-left: 10px"></div>
+    <div id="health" style="margin-left: 10px"></div>
   </div>
+  <script>
+    var request = new XMLHttpRequest();
+    request.open("GET", "resources.json", false);
+    request.send(null)
+    var obj = JSON.parse(request.responseText);
+    // Iterating the search parameters
+    for (const p of ["hate", "response", "hotline", "report", "letter", "health"]) {
+      const container = document.getElementById(p);
+      container.insertAdjacentHTML(
+        'beforeend',
+        `<span style="font-size: 25px">`+obj[p][0]+`<br></span>`,
+      );
+      for(let i=1; i<obj[p].length; i++){
+        if(obj[p][i].length===1){
+          container.insertAdjacentHTML(
+            'beforeend',
+            `<span style="font-size: 15px; display: block; margin-left: 10px; margin-top: 7px;">`+obj[p][i][0]+`<br><br></span>`,
+          );
+        }
+        else{
+          container.insertAdjacentHTML(
+            'beforeend',
+            `<span style="font-size: 15px; display: block; margin-left: 10px; margin-top: 7px;"><a target="_blank" href="`+obj[p][i][1]+`">`+obj[p][i][0]+`</a><br></span>`,
+          );
+        }
+      }
+      container.insertAdjacentHTML(
+        'beforeend',
+        '<br>',
+      );
+    }
+  </script>
+  
 </body>
 
 </html>

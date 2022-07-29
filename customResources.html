@@ -16,10 +16,14 @@
     <div class="container">
       <nav>
         <ul class="primary-nav">
-          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current">
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('index.html')" class="dropbtn">Home</button>
+            </div>
+          </li>
           <li>
             <div class="dropdown">
-              <button class="dropbtn"><b>Resources</b></button>
+              <button class="dropbtn">Resources</button>
               <div class="dropdown-content">
                 <a href="resources.html">All Resources</a>
                 <a href="commonResources.html">Most Common Categories</a>
@@ -27,16 +31,28 @@
               </div>
             </div>
           </li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('donate.html')" class="dropbtn">Donate</button>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('about.html')" class="dropbtn">About Us</button>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="redirectToSpecificPage('contact.html')" class="dropbtn">Contact Us</button>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="mainsection">
     <div class="abtustitle">
-      Resources:
+      Your Resources
     </div>
     <br>
     <div id="donate" style="margin-left: 10px"></div>
